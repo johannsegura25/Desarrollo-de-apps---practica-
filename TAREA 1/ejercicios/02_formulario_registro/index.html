@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <section class="formulario">
+            <h1>Crear una cuenta</h1>
+            <p>Completa los siguientes datos para registrarte.</p>
+
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" placeholder="Ingresa tu nombre">
+                    <small>El nombre debe tener entre 3 y 50 caracteres.</small>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@gmail.com">
+                    <small>Ingresa un correo electrónico válido.</small>
+                </div>
+
+                <div class="campo">
+                    <label for="usuario">Nombre de usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required minlength="4" maxlength="20" pattern="[A-Za-z0-9]+" placeholder="Ejemplo123">
+                    <small>Usa entre 4 y 20 caracteres, sin espacios.</small>
+                </div>
+
+                <div class="campo">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required minlength="8" maxlength="30" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" placeholder="Ingresa tu contraseña">
+                    <small>Mínimo 8 caracteres, una mayúscula y un número.</small>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="987654321">
+                    <small>Ingresa un número de 9 dígitos.</small>
+                </div>
+
+                <div class="terminos">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones.</label>
+                </div>
+
+                <button type="submit">Registrarme</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas HTML - Actividad 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        td, th {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .cabecera {
+            background-color: #2196F3;
+            color: white;
+        }
+        .especial {
+            background-color: #DCC48E;
+            border: 4px solid #C1437A;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            background-color: #97DB9A;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tablas</h1>
+
+    <h2 style="text-align: center;">Tabla Básica</h2>
+    <table>
+        <tr>
+            <td>1ra celda.</td>
+            <td>2da celda.</td>
+            <td>3ra celda.</td>
+            <td>4ta celda.</td>
+        </tr>
+        <tr>
+            <td>2da fila, 1ra celda.</td>
+            <td>2da celda.</td>
+            <td>3ra celda.</td>
+            <td>4ta celda.</td>
+        </tr>
+        <tr>
+            <td>3ra fila, 1ra celda.</td>
+            <td>2da celda.</td>
+            <td>3ra celda.</td>
+            <td>4ta celda.</td>
+        </tr>
+    </table>
+
+    <h2 style="text-align: center;">Tabla con Encabezados</h2>
+    <table>
+        <tr>
+            <th>Animal</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Raza</th>
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td>Molly</td>
+            <td>13 años</td>
+            <td>Bichon maltes</td>
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td>Canela</td>
+            <td>15 años</td>
+            <td>mitsu</td>
+        </tr>
+        <tr>
+            <td>Gato</td>
+            <td>Zeus</td>
+            <td>4 años</td>
+            <td>Americano</td>
+        </tr>
+        <tr>
+            <td>Gato</td>
+            <td>Kitty</td>
+            <td>2 años</td>
+            <td>Americano</td>
+        </tr>
+    </table>
+
+    <h2 style="text-align: center;">Tabla con Colspan y Rowspan</h2>
+    <table>
+        <tr>
+            <th colspan="3" class="cabecera">Animales</th>
+        </tr>
+        <tr>
+            <th>Tipo</th>
+            <th>Nombre</th>
+            <th>Características</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Perro</td>
+            <td>Molly</td>
+            <td>Bichon maltes, 13 años</td>
+        </tr>
+        <tr>
+            <td>Canela</td>
+            <td>mitsu, 15 años</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Gato</td>
+            <td>Zeus</td>
+            <td>Americano, 4 años</td>
+        </tr>
+        <tr>
+            <td>Kitty</td>
+            <td>Americano, 2 años</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #ffcccc; font-weight: bold;">Total de gatos: 2</td>
+            <td style="background-color: #ffcccc;">Total perros: 2</td>
+        </tr>
+    </table>
+
+    <h2 style="text-align: center;">Horario de Clases de Sistemas</h2>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col style="background-color: #97DB9A;">
+            <col style="width: 42px;">
+            <col style="background-color: #97DB9A;">
+            <col style="background-color: #DCC48E; border: 4px solid #C1437A;">
+            <col style="width: 42px;">
+        </colgroup>
+        <tr>
+            <th></th>
+            <th>Lun</th>
+            <th>Mar</th>
+            <th>Mié</th>
+            <th>Jue</th>
+            <th>Vie</th>
+            <th>Sáb</th>
+            <th>Dom</th>
+        </tr>
+        <tr>
+            <th>1er período</th>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td class="especial">HTML</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>2do período</th>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td class="especial">JavaScript</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>3er período</th>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td class="especial">CSS</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>4to período</th>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td>Desarrollo de app</td>
+            <td class="especial">Base de datos</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

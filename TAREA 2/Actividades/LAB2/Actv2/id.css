@@ -1,0 +1,125 @@
+#cabecera-principal {
+    background-color: #1a237e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#titulo-web {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#navegacion {
+    margin-top: 15px;
+}
+#menu-principal {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#item-inicio,
+#item-blog,
+#item-contacto {
+    display: inline;
+}
+#enlace-inicio,
+#enlace-blog,
+#enlace-contacto {
+    color: #ffd54f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+#contenido-web {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+}
+#seccion-articulos {
+    flex: 2;
+}
+#titulo-seccion {
+    color: #1a237e;
+    font-size: 2em;
+    border-bottom: 3px solid #ffd54f;
+    padding-bottom: 10px;
+}
+#articulo1,
+#articulo2 {
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+#articulo1 {
+    border-left: 4px solid #2196f3;
+}
+#articulo2 {
+    border-left: 4px solid #ff9800;
+}
+#titulo-art1 {
+    color: #0d47a1;
+    font-size: 1.3em;
+}
+#titulo-art2 {
+    color: #e65100;
+    font-size: 1.3em;
+}
+#texto-art1-1,
+#texto-art1-2,
+#texto-art2-1,
+#texto-art2-2 {
+    color: #333;
+    line-height: 1.6;
+}
+#barra-lateral {
+    flex: 1;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+}
+#titulo-categorias {
+    color: #1a237e;
+    font-size: 1.3em;
+    border-bottom: 2px solid #90caf9;
+    padding-bottom: 10px;
+}
+#lista-categorias {
+    list-style: none;
+    padding: 0;
+}
+#cat-frontend,
+#cat-backend,
+#cat-devops {
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #1a237e;
+    font-weight: bold;
+}
+#cat-frontend {
+    border-left: 4px solid #2196f3;
+}
+#cat-backend {
+    border-left: 4px solid #4caf50;
+}
+#cat-devops {
+    border-left: 4px solid #ff5722;
+}
+#pie-pagina {
+    background-color: #1a237e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+#texto-copy {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}

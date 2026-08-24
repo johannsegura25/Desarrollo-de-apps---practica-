@@ -1,0 +1,125 @@
+.articulo1 p:first-of-type::first-letter {
+    font-size: 3em;
+    color: #1a237e;
+    font-weight: bold;
+    float: left;
+    margin-right: 8px;
+    line-height: 1;
+}
+.articulo2 p:first-of-type::first-line {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+h2::before {
+    content: "★ ";
+    color: #ff6f00;
+    font-size: 1.2em;
+}
+h3::before {
+    content: "▸ ";
+    color: #1976d2;
+}
+h3::after {
+    content: " ◂";
+    color: #1976d2;
+}
+.articulo1 .autor::after {
+    content: " ✍";
+}
+.articulo2 .autor::after {
+    content: " ✍";
+}
+.articulo3 .autor::after {
+    content: " ✍";
+}
+::selection {
+    background-color: #ff6f00;
+    color: white;
+}
+::placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 0.9em;
+}
+ul li::marker {
+    color: #ff6f00;
+    font-size: 1.5em;
+}
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+header {
+    background: linear-gradient(135deg, #1a237e, #0d47a1);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.descripcion {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+main {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+section {
+    flex: 2;
+}
+aside {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+article {
+    background-color: #fafafa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #1a237e;
+}
+.articulo2 {
+    border-left-color: #d32f2f;
+}
+.articulo3 {
+    border-left-color: #388e3c;
+}
+.autor {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+    text-align: right;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+ul li a {
+    text-decoration: none;
+    color: #1a237e;
+}
+ul li a:hover {
+    color: #ff6f00;
+}
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1a237e;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}

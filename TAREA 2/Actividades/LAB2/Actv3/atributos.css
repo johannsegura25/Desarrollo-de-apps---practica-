@@ -1,0 +1,105 @@
+[href] {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+[href^="https"] {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+[href^="https"]:hover {
+    background-color: #e8f5e9;
+}
+
+[href$=".pdf"] {
+    color: #d32f2f;
+    background-color: #ffebee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+[href$=".jpg"],
+[href$=".png"] {
+    color: #1976d2;
+    background-color: #e3f2fd;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+[href*="google"] {
+    color: #ea4335;
+    font-size: 1.1em;
+}
+
+[href*="youtube"] {
+    color: #ff0000;
+    border: 2px solid #ff0000;
+}
+
+[target="_blank"] {
+    background-color: #e3f2fd;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+[type="text"] {
+    border: 2px solid #2196f3;
+    padding: 8px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+[type="email"] {
+    border: 2px solid #4caf50;
+    padding: 8px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+[type="password"] {
+    border: 2px solid #ff9800;
+    padding: 8px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+[type="submit"] {
+    background-color: #2196f3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+[type="submit"]:hover {
+    background-color: #1976d2;
+}
+
+[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+[required] {
+    border-width: 3px;
+}
+
+[placeholder] {
+    font-style: italic;
+}
+
+[href^="#"] {
+    color: #9c27b0;
+    font-weight: bold;
+}

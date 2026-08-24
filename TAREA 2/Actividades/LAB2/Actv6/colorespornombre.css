@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background-color: orange;
+}
+section {
+    margin-top: 20px;
+}
+article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 4px solid darkblue;
+}
+h2 {
+    color: darkblue;
+    border-bottom: 3px solid orange;
+    padding-bottom: 10px;
+}
+h3 {
+    color: darkblue;
+}
+.caja-rojo {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.caja-azul {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.caja-verde {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.caja-amarillo {
+    background-color: gold;
+    color: black;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.caja-naranja {
+    background-color: orange;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.caja-morado {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.caja-negro {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.caja-gris {
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.caja-blanco {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+}
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}

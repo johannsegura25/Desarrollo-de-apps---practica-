@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Relativas</title>
+    <link rel="stylesheet" href="medidasrelativas.css">
+</head>
+<body>
+    <header>
+        <h1>Medidas Relativas en CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Elementos con Medidas Relativas</h2>
+            <article class="medida-em">
+                <h3>Medida en em</h3>
+                <p>Este elemento utiliza medidas en em (relativo al tamaño de fuente del padre).</p>
+                <div class="caja-em">Caja con 10em de ancho</div>
+                <div class="caja-em2">Caja con 15em de ancho</div>
+                <div class="texto-em">Texto con 1.5em</div>
+            </article>
+            <article class="medida-rem">
+                <h3>Medida en rem</h3>
+                <p>Este elemento utiliza medidas en rem (relativo al tamaño de fuente raiz).</p>
+                <div class="caja-rem">Caja con 10rem de ancho</div>
+                <div class="caja-rem2">Caja con 15rem de ancho</div>
+                <div class="texto-rem">Texto con 1.5rem</div>
+            </article>
+            <article class="medida-porcentaje">
+                <h3>Medida en Porcentaje (%)</h3>
+                <p>Este elemento utiliza medidas en porcentaje.</p>
+                <div class="contenedor-porcentaje">
+                    <div class="caja-porcentaje">50% de ancho</div>
+                    <div class="caja-porcentaje2">80% de ancho</div>
+                </div>
+            </article>
+            <article class="medida-vw">
+                <h3>Medida en vw (Viewport Width)</h3>
+                <p>Este elemento utiliza medidas en vw (1% del ancho de la ventana).</p>
+                <div class="caja-vw">Caja con 30vw de ancho</div>
+                <div class="caja-vw2">Caja con 50vw de ancho</div>
+            </article>
+            <article class="medida-vh">
+                <h3>Medida en vh (Viewport Height)</h3>
+                <p>Este elemento utiliza medidas en vh (1% de la altura de la ventana).</p>
+                <div class="caja-vh">Caja con 10vh de alto</div>
+                <div class="caja-vh2">Caja con 15vh de alto</div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

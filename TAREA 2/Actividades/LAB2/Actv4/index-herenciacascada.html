@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia y Cascada</title>
+    <link rel="stylesheet" href="herenciaycascada.css">
+</head>
+<body>
+    <header>
+        <h1>Herencia y Cascada en CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Articulos</h2>
+            
+            <article class="articulo1">
+                <h3>Herencia en CSS</h3>
+                <p>La herencia permite que propiedades de elementos padres se transmitan a sus hijos.</p>
+                <ul>
+                    <li>Color se hereda</li>
+                    <li>Fuente se hereda</li>
+                    <li>Borde no se hereda</li>
+                </ul>
+                <span>Texto con herencia</span>
+            </article>
+            <article class="articulo2" id="articulo-principal">
+                <h3>Cascada en CSS</h3>
+                <p>La cascada resuelve conflictos entre reglas CSS.</p>
+                <ul>
+                    <li>Orden de origen</li>
+                    <li>Especificidad</li>
+                    <li>Importancia</li>
+                </ul>
+                <span>Texto con cascada</span>
+            </article>
+
+            <article class="articulo3">
+                <h3>Especificidad</h3>
+                <p>La especificidad determina que regla prevalece.</p>
+                <ul>
+                    <li>ID > Clase > Elemento</li>
+                    <li>Estilos en linea</li>
+                    <li>!important</li>
+                </ul>
+                <span>Texto con especificidad</span>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

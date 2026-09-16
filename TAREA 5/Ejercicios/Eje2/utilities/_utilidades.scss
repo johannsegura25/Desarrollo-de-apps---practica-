@@ -1,0 +1,31 @@
+
+$espaciados: (
+  "0": 0,
+  "xs": $espaciado-xs,
+  "sm": $espaciado-sm,
+  "md": $espaciado-md,
+  "lg": $espaciado-lg,
+  "xl": $espaciado-xl
+);
+
+@each $nombre, $valor in $espaciados {
+  .m-#{$nombre}  { margin: px-a-rem($valor); }
+  .mt-#{$nombre} { margin-top: px-a-rem($valor); }
+  .mb-#{$nombre} { margin-bottom: px-a-rem($valor); }
+  .ml-#{$nombre} { margin-left: px-a-rem($valor); }
+  .mr-#{$nombre} { margin-right: px-a-rem($valor); }
+  .p-#{$nombre}  { padding: px-a-rem($valor); }
+  .pt-#{$nombre} { padding-top: px-a-rem($valor); }
+  .pb-#{$nombre} { padding-bottom: px-a-rem($valor); }
+  .px-#{$nombre} { padding-inline: px-a-rem($valor); }
+  .py-#{$nombre} { padding-block: px-a-rem($valor); }
+}
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+@each $nombre, $color in $tema-colores {
+  .text-#{$nombre} { color: $color; }
+  .bg-#{$nombre}   { @include tema-componente($color); }
+}

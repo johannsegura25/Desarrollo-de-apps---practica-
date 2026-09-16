@@ -1,0 +1,26 @@
+@use "sass:math";
+
+/// @param {Number} $pixeles - Valor numérico en píxeles (sin unidad o con px).
+/// @return {Number} Valor convertido a rem.
+@function px-a-rem($pixeles) {
+  // Validación: si no es número, lanzar error
+  @if type-of($pixeles) != "number" {
+    @error "px-a-rem() espera un número, se recibió: #{type-of($pixeles)}.";
+  }
+
+  $valor-numerico: if(unit($pixeles) == "px", math.div($pixeles, 1px), $pixeles);
+
+  @return math.div($valor-numerico, math.div($base-font-size, 1px)) * 1rem;
+}
+
+/// @param {Number} $columnas - Número de columnas a ocupar.
+/// @return {Percentage} Porcentaje de ancho.
+@function col-porcentaje($columnas) {
+  @return math.div($columnas, $columnas-grilla) * 100%;
+}
+
+/// @param {Color} $color - Color a evaluar.
+/// @return {Bool}
+@function es-color-oscuro($color) {
+  @return lightness($color) < $umbral-luminosidad;
+}

@@ -1,0 +1,51 @@
+/// @param {Color} $color-fondo - Color de fondo del componente.
+@mixin tema-componente($color-fondo) {
+  background-color: $color-fondo;
+
+  @if es-color-oscuro($color-fondo) {
+    color: $color-texto-claro;
+    border-color: darken($color-fondo, 10%);
+  } @else {
+    color: $color-texto-oscuro;
+    border-color: darken($color-fondo, 10%);
+  }
+}
+
+/// @param {Color} $color - Color base del botón.
+@mixin boton-variante($color) {
+  @include tema-componente($color);
+
+  &:hover {
+    @if es-color-oscuro($color) {
+      background-color: lighten($color, 10%);
+    } @else {
+      background-color: darken($color, 10%);
+    }
+  }
+
+  &:active {
+    background-color: darken($color, 15%);
+    transform: translateY(1px);
+  }
+}
+
+/// @param {String} $nombre - Clave del mapa $breakpoints.
+@mixin respond-to($nombre) {
+  @if map-has-key($breakpoints, $nombre) {
+    @media (min-width: map-get($breakpoints, $nombre)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$nombre}' no existe en $breakpoints.";
+  }
+}
+
+@mixin flex($direccion: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $justify;
+  align-items: $align;
+  @if $gap != 0 {
+    gap: px-a-rem($gap);
+  }
+}

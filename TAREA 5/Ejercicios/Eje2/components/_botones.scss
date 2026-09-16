@@ -1,0 +1,53 @@
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: px-a-rem(8);
+  padding: px-a-rem(10) px-a-rem(20);
+  font-family: inherit;
+  font-size: px-a-rem(14);
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: px-a-rem($radio-md);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease,
+              box-shadow 0.2s ease;
+  user-select: none;
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.btn-sm { padding: px-a-rem(6) px-a-rem(12); font-size: px-a-rem(12); }
+.btn-lg { padding: px-a-rem(14) px-a-rem(28); font-size: px-a-rem(16); }
+.btn-bloque { width: 100%; }
+
+@each $nombre, $color in $tema-colores {
+  .btn-#{$nombre} {
+    @include boton-variante($color);
+  }
+}
+
+@each $nombre, $color in $tema-colores {
+  .btn-outline-#{$nombre} {
+    background-color: transparent;
+    color: $color;
+    border-color: $color;
+
+    &:hover {
+      @include tema-componente($color);
+      border-color: $color;
+    }
+  }
+}

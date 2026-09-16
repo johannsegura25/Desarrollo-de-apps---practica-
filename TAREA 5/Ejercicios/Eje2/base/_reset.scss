@@ -1,0 +1,29 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // 1rem = 16px por defecto
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $fuente-principal;
+  font-size: px-a-rem(16);
+  line-height: 1.6;
+  color: $color-texto-oscuro;
+  background-color: #f9fafb;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 { font-size: px-a-rem(40); margin-bottom: px-a-rem(16); }
+h2 { font-size: px-a-rem(32); margin-bottom: px-a-rem(14); }
+h3 { font-size: px-a-rem(24); margin-bottom: px-a-rem(12); }
+h4 { font-size: px-a-rem(20); margin-bottom: px-a-rem(10); }
+p  { font-size: px-a-rem(16); margin-bottom: px-a-rem(16); }

@@ -1,0 +1,35 @@
+@use "sass:math";
+
+.contenedor {
+  width: 100%;
+  max-width: px-a-rem(1200);
+  margin-inline: auto;
+  padding-inline: px-a-rem($gutter-grilla);
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: px-a-rem(math.div($gutter-grilla, -2));
+}
+
+@for $i from 1 through $columnas-grilla {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: col-porcentaje($i);
+    padding-inline: px-a-rem(math.div($gutter-grilla, 2));
+  }
+}
+
+// Columnas responsive por breakpoint
+@each $nombre, $ancho in $breakpoints {
+  @include respond-to($nombre) {
+    @for $i from 1 through $columnas-grilla {
+      .col-#{$nombre}-#{$i} {
+        flex: 0 0 auto;
+        width: col-porcentaje($i);
+        padding-inline: px-a-rem(math.div($gutter-grilla, 2));
+      }
+    }
+  }
+}
